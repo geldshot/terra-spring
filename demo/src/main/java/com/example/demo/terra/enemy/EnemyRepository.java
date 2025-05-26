@@ -6,4 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EnemyRepository extends JpaRepository<Enemy, Long>{
     List<Enemy> findEnemyByNameContaining(String name);
+    List<Enemy> findEnemyByKeyNameContaining(String keyName);
 }

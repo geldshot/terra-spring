@@ -22,4 +22,8 @@ public class EnemyService {
     public List<Enemy> getByName(String name) {
         return enemyRepository.findEnemyByNameContaining(name);
     }
+
+    public List<Enemy> getByKeyName(String keyName){
+        return enemyRepository.findEnemyByKeyNameContaining(keyName);
+    }
 }
