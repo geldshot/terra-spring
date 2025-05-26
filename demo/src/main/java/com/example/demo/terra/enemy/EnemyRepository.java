@@ -1,5 +1,7 @@
 package com.example.demo.terra.enemy;
 
-public interface EnemyRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EnemyRepository extends JpaRepository<Enemy, Long>{
     
 }
