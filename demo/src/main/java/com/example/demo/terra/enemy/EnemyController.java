@@ -26,6 +26,10 @@ public class EnemyController {
     public List<Enemy> getEnemies() {
         return enemyService.getAllEnemies();
     }
+    @GetMapping("/Name/{name}")
+    public List<Enemy> getEnemiesByName(@PathVariable String name){
+        return enemyService.getByName(name);
+    }
     
 
 }

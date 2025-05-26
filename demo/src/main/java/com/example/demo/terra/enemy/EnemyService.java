@@ -18,4 +18,8 @@ public class EnemyService {
     public Enemy getEnemyById(Long id){
         return enemyRepository.findById(id).orElse(null);
     }
+
+    public List<Enemy> getByName(String name) {
+        return enemyRepository.findEnemyByNameContaining(name);
+    }
 }
